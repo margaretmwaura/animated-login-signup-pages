@@ -1,0 +1,83 @@
+.main_signup {
+  background-color: $red;
+  height : 400px;
+  text-align: center;
+  &_heading_text{
+    text-align: center;
+    padding-top: 30%;
+    h3{
+      color: white;
+      font-weight: bolder;
+    }
+  }
+
+  &_message{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    p{
+      color: white;
+    }
+  }
+
+  &_execute{
+    @include rounded_boxes($white)
+  }
+}
+
+.main_signup_form {
+  background-color: $white;
+  height : 400px;
+  padding-top: 10%;
+  text-align: center;
+
+  ::placeholder { /* Firefox, Chrome, Opera */
+    color: black;
+    font-size: 12px;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    font-size: 12px;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+    font-size: 12px;
+  }
+
+  h3 {
+    font-weight: bolder;
+  }
+
+  i{
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+
+  input[type="text"] {
+    background-color : #d1d1d1;
+    width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &_icons{
+    padding-top: 2%;
+  }
+
+  &_welcome{
+    padding-top: 5%;
+
+    p{
+      font-weight: bolder;
+    }
+  }
+
+  &_execute{
+    @include rounded_boxes($red);
+    color: $white;
+    background-color: $red;
+  }
+}
