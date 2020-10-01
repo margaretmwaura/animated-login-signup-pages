@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/Permutations/'
+    publicPath: '/animated-login-signup-pages/'
 }
